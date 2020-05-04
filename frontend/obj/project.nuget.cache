@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "8Vi68DOKRzjvARB99defstappW+MBBhuZKBse3WOW64U072k3+PPx6kukSmPxCFTqz6cza+S4ys7QBRUb0jt1Q==",
+  "dgSpecHash": "CEHSKHbPdo7pAvREzP4rH6ZLGo7NXiBlXa+LzBRxIg8/xnQ08X/MISZZIW3F6ajKeYbTmuvFyj/zXYBPj1/Lng==",
   "success": true,
   "projectFilePath": "F:\\code\\nextbigapp\\frontend\\frontend.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Glenn\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",
+    "C:\\Users\\Glenn\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.3\\microsoft.extensions.configuration.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\Glenn\\.nuget\\packages\\microsoft.extensions.configuration.keyperfile\\3.1.3\\microsoft.extensions.configuration.keyperfile.3.1.3.nupkg.sha512",
+    "C:\\Users\\Glenn\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.3\\microsoft.extensions.fileproviders.abstractions.3.1.3.nupkg.sha512",
+    "C:\\Users\\Glenn\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.3\\microsoft.extensions.fileproviders.physical.3.1.3.nupkg.sha512",
+    "C:\\Users\\Glenn\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.3\\microsoft.extensions.filesystemglobbing.3.1.3.nupkg.sha512",
+    "C:\\Users\\Glenn\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.3\\microsoft.extensions.primitives.3.1.3.nupkg.sha512",
+    "C:\\Users\\Glenn\\.nuget\\packages\\microsoft.tye.extensions.configuration\\0.1.0-alpha.20209.5\\microsoft.tye.extensions.configuration.0.1.0-alpha.20209.5.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,25 +1,28 @@
 using System;
 using System.Linq;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace frontend.Data
 {
     public class WeatherForecastService
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        private HttpClient _client;
+        private JsonSerializerOptions _serializationOptions;
 
-        public Task<WeatherForecast[]> GetForecastAsync(DateTime startDate)
+        public WeatherForecastService(HttpClient client)
         {
-            var rng = new Random();
-            return Task.FromResult(Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = startDate.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            }).ToArray());
+            _client = client;
+            _serializationOptions = new JsonSerializerOptions{ PropertyNameCaseInsensitive = true };
+        }
+
+        public async Task<WeatherForecast[]> GetForecastAsync(DateTime startDate)
+        {
+            var stream = await _client.GetStreamAsync("/WeatherForecast");
+            return await JsonSerializer.DeserializeAsync<WeatherForecast[]>(stream, _serializationOptions);
         }
     }
 }
+
