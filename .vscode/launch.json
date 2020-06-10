@@ -54,7 +54,7 @@
     ],
     "compounds": [
         {
-            "name": "fornt/back",
+            "name": "front/back",
             "configurations": ["frontend", "backend"]
         }
     ]

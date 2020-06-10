@@ -28,7 +28,7 @@ namespace frontend
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddHttpClient<WeatherForecastService>(c => c.BaseAddress = new Uri(Configuration["BackendURL"]));
+            services.AddHttpClient<WeatherForecastService>(c => c.BaseAddress = Configuration.GetServiceUri("backend"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
